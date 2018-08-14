@@ -27,4 +27,6 @@
 #define BTA_BLE_SKIP_CONN_UPD  TRUE
 // Disables read remote device feature
 #define BTA_SKIP_BLE_READ_REMOTE_FEAT TRUE
+// If BLE_VND_INCLUDED enabled, crashes the stack when bluetooth is turned on.
+#define BLE_VND_INCLUDED FALSE
 #endif
