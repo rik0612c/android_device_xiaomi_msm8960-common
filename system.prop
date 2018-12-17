@@ -69,7 +69,7 @@ debug.egl.recordable.rgba8888=1
 
 # QCOM Display
 debug.sf.hw=1
-debug.sf.latch_unsignaled=1
+#debug.sf.latch_unsignaled=1
 debug.egl.hw=1
 debug.composition.type=c2d
 debug.hwui.use_buffer_age=false
