@@ -190,7 +190,6 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_REMOVE_SECDISCARD_COMMAND := true
 
 # Sepolicy
-include device/qcom/sepolicy-legacy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
 
 # Security patch level
