@@ -241,5 +241,7 @@
     <!-- The list of components which should be automatically disabled for a specific device. -->
     <string-array name="config_deviceDisabledComponents" translatable="false">
         <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
+        <item>org.lineageos.snap/com.android.camera.SetActivitiesCameraReceiver</item>
+        <item>com.android.camera2/com.android.camera.SetActivitiesCameraReceiver</item>
     </string-array>
 </resources>
