@@ -92,7 +92,7 @@ PRODUCT_PACKAGES += \
     bdaddr_xiaomi \
     libbt-vendor \
     audio.bluetooth.default \
-    android.hardware.bluetooth.audio@2.0-impl
+    android.hardware.bluetooth.audio@2.1-impl
 
 # Camera
 PRODUCT_PACKAGES += \
