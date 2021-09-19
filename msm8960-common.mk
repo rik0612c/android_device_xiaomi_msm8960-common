@@ -203,16 +203,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(COMMON_PATH)/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml
 
-# mpdecision configuration
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/thermal/thermald-8064.conf:system/etc/thermald-8064.conf \
-    $(COMMON_PATH)/configs/thermal/thermald-8064ab.conf:system/etc/thermald-8064ab.conf \
-    $(COMMON_PATH)/configs/thermal/thermald-8960.conf:system/etc/thermald-8960.conf \
-    $(COMMON_PATH)/configs/thermal/thermald-8960ab.conf:system/etc/thermald-8960ab.conf \
-    $(COMMON_PATH)/configs/thermal/thermal-engine-8064.conf:system/etc/thermal-engine-8064.conf \
-    $(COMMON_PATH)/configs/thermal/thermal-engine-8064ab.conf:system/etc/thermal-engine-8064ab.conf \
-    $(COMMON_PATH)/configs/thermal/thermal-engine-8960.conf:system/etc/thermal-engine-8960.conf
-
 # Omx
 PRODUCT_PACKAGES += \
     libOmxAacEnc \
@@ -227,10 +217,6 @@ PRODUCT_PACKAGES += \
     libdivxdrmdecrypt \
     libmm-omxcore \
     libstagefrighthw
-
-# Perf
-PRODUCT_PACKAGES += \
-    libshims_atomic
 
 # Power
 PRODUCT_PACKAGES += \
@@ -280,6 +266,16 @@ PRODUCT_COPY_FILES += \
 # Trust HAL
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
+
+# Thermal configuration
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/thermal/thermald-8064.conf:system/etc/thermald-8064.conf \
+    $(COMMON_PATH)/configs/thermal/thermald-8064ab.conf:system/etc/thermald-8064ab.conf \
+    $(COMMON_PATH)/configs/thermal/thermald-8960.conf:system/etc/thermald-8960.conf \
+    $(COMMON_PATH)/configs/thermal/thermald-8960ab.conf:system/etc/thermald-8960ab.conf \
+    $(COMMON_PATH)/configs/thermal/thermal-engine-8064.conf:system/etc/thermal-engine-8064.conf \
+    $(COMMON_PATH)/configs/thermal/thermal-engine-8064ab.conf:system/etc/thermal-engine-8064ab.conf \
+    $(COMMON_PATH)/configs/thermal/thermal-engine-8960.conf:system/etc/thermal-engine-8960.conf
 
 # TimeKeep
 PRODUCT_PACKAGES += \
