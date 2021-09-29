@@ -116,4 +116,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # misc
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.binary_xml=false \
-    ro.vndk.version=current
+    ro.vndk.version=current \
+    ro.soc.manufacturer=Qualcomm \
+    ro.soc.model=MSM8960
+
