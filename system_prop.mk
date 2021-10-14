@@ -12,6 +12,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.audio.sdk.fluencetype=none \
     ro.config.vc_call_vol_steps=7 \
     ro.config.media_vol_steps=25
+    
+# BPF
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.kernel.ebpf.supported=false
 
 # Dalvik heap
 PRODUCT_PROPERTY_OVERRIDES += \
