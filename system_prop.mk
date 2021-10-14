@@ -33,8 +33,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.cdma.home.operator.numeric=46003 \
     ro.telephony.default_cdma_sub=0 \
     persist.omh.enabled=true \
-    rild.libpath=/vendor/lib/libril-qc-qmi-1.so \
-    rild.libargs=-d[SPACE]/dev/smd0
+    vendor.rild.libpath=/vendor/lib/libril-qc-qmi-1.so \
+    vendor.rild.libargs=-d[SPACE]/dev/smd0
 
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
