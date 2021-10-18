@@ -80,7 +80,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # QCOM Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=1 \
-    debug.sf.disable_backpressure=1 \
     debug.sf.latch_unsignaled=1 \
     debug.egl.hw=1 \
     debug.composition.type=dyn \
@@ -113,3 +112,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=1
+    
+# misc
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.binary_xml=false
