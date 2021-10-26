@@ -111,7 +111,7 @@ PRODUCT_COPY_FILES += \
 
 # Component overrides
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
+    $(COMMON_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
 # Display
 PRODUCT_PACKAGES += \
@@ -132,6 +132,10 @@ PRODUCT_PACKAGES += \
     copybit.msm8960 \
     memtrack.msm8960 \
     libemoji
+
+# Display Device Config
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/displayconfig/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
 
 # Drm
 PRODUCT_PACKAGES += \
