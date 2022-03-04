@@ -86,13 +86,11 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.0-impl \
     audio_policy.msm8960 \
     audio.primary.msm8960 \
-    audio.a2dp.default \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
-    libqcomvoiceprocessing \
-    tinymix
-
+    libqcomvoiceprocessing
+    
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl \
