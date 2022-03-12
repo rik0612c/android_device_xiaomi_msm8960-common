@@ -142,6 +142,7 @@ BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom ehci-hcd.park=3 m
 BOARD_RAMDISK_USE_XZ := true
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_SOURCE := kernel/xiaomi/aries
+TARGET_KERNEL_CLANG_COMPILE := false
 
 # Malloc
 MALLOC_SVELTE := true
@@ -183,6 +184,7 @@ TARGET_REMOVE_SECDISCARD_COMMAND := true
 
 # Sepolicy
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2016-01-01
