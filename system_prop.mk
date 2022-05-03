@@ -27,7 +27,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnCdmaDevice=0 \
-    ril.subscription.types=RUIM \
+    vendor.ril.subscription.types=RUIM \
     persist.radio.apm_sim_not_pwdn=0 \
     ro.telephony.call_ring.multiple=0 \
     ro.cdma.home.operator.numeric=46003 \
