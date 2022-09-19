@@ -19,8 +19,6 @@
 
 #define BLUETOOTH_QTI_SW TRUE
 
-#define BTM_DEF_LOCAL_NAME   "Xiaomi MI-2"
-
 #define SC_MODE_INCLUDED FALSE
 
 // Enables Interleave scan
