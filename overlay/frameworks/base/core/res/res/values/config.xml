@@ -223,10 +223,6 @@
         <item>hsupa:4094,87380,704512,4096,16384,110208</item>
     </string-array>
 
-    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
-         in hardware. -->
-    <bool name="config_setColorTransformAccelerated">true</bool>
-
     <!-- Enable doze mode
          ComponentName of a dream to show whenever the system would otherwise have gone to sleep. -->
     <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
