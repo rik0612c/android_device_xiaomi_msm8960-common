@@ -52,6 +52,8 @@ ro.qualcomm.bt.hci_transport=smd
 ro.bluetooth.request.master=true
 ro.bluetooth.remote.autoconnect=true
 bluetooth.a2dp.sink.enabled=false
+bluetooth.le.disable_apcf_extended_features=1
+bluetooth.sco.disable_enhanced_connection=1
 
 # transmitter isn't supported
 ro.fm.transmitter=false
@@ -101,7 +103,6 @@ persist.sys.binary_xml=false
 ro.vndk.version=current
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=MSM8960
-bluetooth.le.disable_apcf_extended_features=1
 
 # Dalvik
 dalvik.vm.dex2oat-swap=false
