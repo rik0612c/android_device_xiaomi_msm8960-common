@@ -101,6 +101,7 @@ persist.sys.binary_xml=false
 ro.vndk.version=current
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=MSM8960
+bluetooth.le.disable_apcf_extended_features=1
 
 # Dalvik
 dalvik.vm.dex2oat-swap=false
