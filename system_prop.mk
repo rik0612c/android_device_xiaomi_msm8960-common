@@ -82,13 +82,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=1 \
     debug.sf.latch_unsignaled=1 \
     debug.egl.hw=1 \
-    debug.composition.type=dyn \
+    debug.composition.type=c2d \
     debug.hwui.use_buffer_age=false \
     debug.sf.enable_gl_backpressure=1 \
     persist.hwc.mdpcomp.enable=true \
     debug.mdpcomp.logs=0 \
-    ro.sf.lcd_density=320 \
-    debug.renderengine.backend=threaded
+    debug.renderengine.backend=threaded \
+    debug.sf.disable_backpressure=1 \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+    
 
 # Power Profile
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -120,3 +122,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.soc.manufacturer=Qualcomm \
     ro.soc.model=MSM8960
 
+# Dalvik
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dex2oat-swap=false \
+    dalvik.vm.dex2oat-cpu-set=0,1,2,3 \
+    dalvik.vm.dex2oat-threads=4 \
+    dalvik.vm.dex2oat-filter=speed

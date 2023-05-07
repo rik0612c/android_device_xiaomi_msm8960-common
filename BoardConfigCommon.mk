@@ -83,6 +83,7 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
     /system/vendor/bin/mm-qcamera-daemon=22
 TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY := camera_parameters_xiaomi_msm8960
 TARGET_USES_QCOM_BSP_LEGACY := true
+TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
 # Dexpreopt
 WITH_DEXPREOPT_DEBUG_INFO := false
@@ -92,10 +93,21 @@ BOARD_USES_LEGACY_MMAP := true
 HAVE_ADRENO_SOURCE := false
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 USE_OPENGL_RENDERER := true
-TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x2000U | 0x02000000U
+TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x2000U | 0x02000000U | 0x02002000U
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
 TARGET_USES_C2D_COMPOSITION := true
 TARGET_USES_ION := true
+TARGET_SCREEN_DENSITY := 320
+
+# EGL
+# Maximum GLES shader cache size for each app to store the compiled shader
+# binaries. Decrease the size if RAM or Flash Storage size is a limitation
+# of the device.
+MAX_EGL_CACHE_SIZE := 2048*1024
+# Shader cache config options
+# Maximum size of the  GLES Shaders that can be cached for reuse.
+# Increase the size if shaders of size greater than 12KB are used.
+MAX_EGL_CACHE_KEY_SIZE := 12*1024
 
 # Extended filesystem support
 TARGET_EXFAT_DRIVER := sdfat
