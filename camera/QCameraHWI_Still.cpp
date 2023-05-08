@@ -24,7 +24,7 @@
 #include <utils/threads.h>
 #include <fcntl.h>
 #include <sys/mman.h>
-#include <media/mediarecorder.h>
+//#include <media/mediarecorder.h>
 #include <math.h>
 #include "QCameraHAL.h"
 #include "QCameraHWI.h"

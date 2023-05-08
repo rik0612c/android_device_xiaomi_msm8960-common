@@ -31,7 +31,7 @@
 #include <math.h>
 #include <linux/ioctl.h>
 #include "QCameraParameters.h"
-#include <media/mediarecorder.h>
+//#include <media/mediarecorder.h>
 #include <gralloc_priv.h>
 
 #include "linux/msm_mdp.h"
