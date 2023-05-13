@@ -54,6 +54,7 @@ ro.bluetooth.remote.autoconnect=true
 bluetooth.a2dp.sink.enabled=false
 bluetooth.le.disable_apcf_extended_features=1
 bluetooth.sco.disable_enhanced_connection=1
+bluetooth.core.le.vendor_capabilities.enabled=false
 
 # transmitter isn't supported
 ro.fm.transmitter=false
