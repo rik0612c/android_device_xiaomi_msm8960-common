@@ -174,7 +174,7 @@ BOARD_ROOT_EXTRA_FOLDERS := firmware persist
 TARGET_USES_INTERACTION_BOOST := true
 
 # Properties
-#TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 
 # QCOM enhanced A/V

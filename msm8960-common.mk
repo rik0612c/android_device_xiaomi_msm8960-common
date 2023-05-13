@@ -31,9 +31,6 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 PRODUCT_AAPT_PREBUILT_DPI := hdpi
 
-# System properties
--include $(COMMON_PATH)/system_prop.mk
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
