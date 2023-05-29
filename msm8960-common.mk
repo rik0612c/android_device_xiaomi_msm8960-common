@@ -79,7 +79,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@5.0-impl \
     android.hardware.broadcastradio@1.0-impl \
     android.hardware.soundtrigger@2.0-impl \
-    audio_policy.msm8960 \
     audio.primary.msm8960 \
     audio.r_submix.default \
     audio.usb.default \
@@ -121,12 +120,10 @@ PRODUCT_PACKAGES += \
     libmemalloc \
     liboverlay \
     libqdutils \
-    libtilerenderer \
     hwcomposer.msm8960 \
     gralloc.msm8960 \
     copybit.msm8960 \
-    memtrack.msm8960 \
-    libemoji
+    memtrack.msm8960
 
 # Display Device Config
 PRODUCT_COPY_FILES += \
@@ -212,8 +209,6 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libc2dcolorconvert \
-    libdashplayer \
-    libdivxdrmdecrypt \
     libmm-omxcore \
     libstagefrighthw
 
@@ -228,13 +223,11 @@ PRODUCT_PACKAGES += \
     init.qcom.rc  \
     init.class_main.sh \
     init.qcom.bt.sh \
-    init.qcom.btdun.sh \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
     init.qcom.fm.sh \
     init.qcom.mdm_links.sh \
     init.qcom.modem_links.sh \
-    init.qcom.post_boot.sh \
     init.qcom.sh \
     init.qcom.syspart_fixup.sh \
     init.qcom.usb.rc \
