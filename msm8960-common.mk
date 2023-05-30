@@ -223,6 +223,7 @@ PRODUCT_PACKAGES += \
     init.qcom.rc  \
     init.class_main.sh \
     init.qcom.bt.sh \
+    init.qcom.btdun.sh \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
     init.qcom.fm.sh \
@@ -232,6 +233,7 @@ PRODUCT_PACKAGES += \
     init.qcom.syspart_fixup.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
+    init.qcom.post_boot.sh \
     init.target.rc \
     ueventd.qcom.rc
 
