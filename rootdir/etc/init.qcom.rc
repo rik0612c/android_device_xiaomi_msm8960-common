@@ -631,7 +631,6 @@ on property:persist.sysmatsir.enable=1
 service charger /system/bin/chargeonlymode
     class charger
     group system graphics
-    seclabel u:r:charger:s0
 
 # Restart adbd so it can run as root
 on property:service.adb.root=1
