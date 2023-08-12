@@ -303,9 +303,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiParts
 
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
-
 # call the proprietary setup
 $(call inherit-product, vendor/xiaomi/msm8960-common/msm8960-common-vendor.mk)

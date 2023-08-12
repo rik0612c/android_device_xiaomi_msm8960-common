@@ -278,6 +278,3 @@
 /sys/devices/system/cpu/cpu*    cpufreq/scaling_max_freq    0664    system    system
 /sys/devices/system/cpu/cpu*    cpufreq/scaling_min_freq    0664    system    system
 /sys/devices/system/cpu/nrcpus                              0664    system    system
-
-# Charger
-/sys/class/power_supply/battery  charging_enabled    0660    system  system
