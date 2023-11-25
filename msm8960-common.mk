@@ -83,7 +83,8 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
-    libqcomvoiceprocessing
+    libqcomvoiceprocessing \
+    libaudioroute
     
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -211,7 +212,8 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libc2dcolorconvert \
     libmm-omxcore \
-    libstagefrighthw
+    libstagefrighthw \
+    libminijail:32
 
 # Partitions
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
