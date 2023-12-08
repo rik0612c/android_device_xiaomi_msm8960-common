@@ -44,7 +44,8 @@ LOCAL_CFLAGS += \
 
 LOCAL_C_INCLUDES:= \
     $(TARGET_OUT_HEADERS)/gps.utils \
-    $(TARGET_OUT_HEADERS)/libloc_core
+    $(TARGET_OUT_HEADERS)/libloc_core \
+    hardware/libhardware/include
 
 LOCAL_HEADER_LIBRARIES := libgps.utils_headers libloc_core_headers
 
@@ -92,7 +93,11 @@ endif
 ## Includes
 LOCAL_C_INCLUDES:= \
     $(TARGET_OUT_HEADERS)/gps.utils \
-    $(TARGET_OUT_HEADERS)/libloc_core
+    $(TARGET_OUT_HEADERS)/libloc_core \
+    hardware/libhardware/include
+
+LOCAL_MODULE_RELATIVE_PATH := hw
+>>>>>>> 759b4675 (msm8974-common: Fix gps build on U)
 
 LOCAL_HEADER_LIBRARIES := libgps.utils_headers libloc_core_headers
 

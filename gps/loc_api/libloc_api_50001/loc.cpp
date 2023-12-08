@@ -566,7 +566,7 @@ const void* loc_get_extension(const char* name)
     ENTRY_LOG();
     const void* ret_val = NULL;
 
-   LOC_LOGD("%s:%d] For Interface = %s\n",__func__, __LINE__, name);
+   LOC_LOGD("%%s:%%d] For Interface = %s\n",__func__, __LINE__, name);
    if (strcmp(name, GPS_XTRA_INTERFACE) == 0)
    {
        ret_val = &sLocEngXTRAInterface;
@@ -579,11 +579,11 @@ const void* loc_get_extension(const char* name)
        //return NULL as the interface for AGPS
        if((gps_conf.CAPABILITIES & GPS_CAPABILITY_MSA) ||
           (gps_conf.CAPABILITIES & GPS_CAPABILITY_MSB) ) {
-           LOC_LOGD("%s:%d]: AGPS capabilities found\n", __func__, __LINE__);
+           LOC_LOGD("%%s:%%d]: AGPS capabilities found\n", __func__, __LINE__);
            ret_val = &sLocEngAGpsInterface;
        }
        else {
-           LOC_LOGD("%s:%d]: Returning NULL AgpsInterface\n", __func__, __LINE__);
+           LOC_LOGD("%%s:%%d]: Returning NULL AgpsInterface\n", __func__, __LINE__);
            ret_val = NULL;
        }
    }
