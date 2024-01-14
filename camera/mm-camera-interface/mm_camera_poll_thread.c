@@ -37,6 +37,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <poll.h>
 #include "mm_camera_interface2.h"
 #include "mm_camera.h"
+#include <string.h>
 
 typedef enum {
     /* ask the channel to flash out the queued frames. */

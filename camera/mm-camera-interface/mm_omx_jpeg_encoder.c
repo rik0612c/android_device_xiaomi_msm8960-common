@@ -37,6 +37,8 @@
 #include "omx_debug.h"
 #include "omx_jpeg_ext.h"
 #include "mm_omx_jpeg_encoder.h"
+#include <stdlib.h>
+#include <string.h>
 
 static uint8_t hw_encode = true;
 static int jpegRotation = 0;

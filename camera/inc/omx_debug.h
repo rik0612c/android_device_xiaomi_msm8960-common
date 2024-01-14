@@ -38,7 +38,7 @@
 #ifdef ANDROID
   #define LOG_NIDEBUG 0
   #define LOG_TAG "mm-still-omx"
-  #include <utils/Log.h>
+  #include <log/log.h>
   #ifdef NEW_LOG_API
     #define OMXDBG(fmt, args...) ALOGV(fmt, ##args)
   #else

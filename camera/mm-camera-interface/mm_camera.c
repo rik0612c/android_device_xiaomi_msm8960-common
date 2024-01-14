@@ -38,6 +38,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "mm_camera_sock.h"
 #include "mm_camera_interface2.h"
 #include "mm_camera.h"
+#include <string.h>
+#include <stdio.h>
 
 static int32_t mm_camera_send_native_ctrl_cmd(mm_camera_obj_t * my_obj,
     cam_ctrl_type type, uint32_t length, void *value);

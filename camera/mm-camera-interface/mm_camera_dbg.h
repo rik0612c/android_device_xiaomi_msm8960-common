@@ -38,7 +38,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     #undef LOG_TAG
     #define LOG_NIDEBUG 0
     #define LOG_TAG "mm-libcamera2"
-    #include <utils/Log.h>
+    #include <log/log.h>
   #else
     #include <stdio.h>
     #define ALOGV CDBG

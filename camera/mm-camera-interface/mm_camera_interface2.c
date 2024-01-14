@@ -37,6 +37,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <stddef.h>
 #include <poll.h>
 #include <linux/media.h>
+#include <stdlib.h>
+#include <string.h>
 
 #include "mm_camera_interface2.h"
 #include "mm_camera.h"
