@@ -101,8 +101,7 @@ camera2.portability.force_api=1
 
 # MISC
 persist.sys.binary_xml=false
-ro.vndk.version=current
-ro.soc.manufacturer=Qualcomm
+ro.soc.manufacturer=QTI
 ro.soc.model=MSM8960
 
 # Dalvik
