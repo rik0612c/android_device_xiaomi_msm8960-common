@@ -37,6 +37,8 @@ LOCAL_SHARED_LIBRARIES := \
 
 LOCAL_STRIP_MODULE := false
 
+LOCAL_C_INCLUDES := hardware/libhardware/include
+
 include $(BUILD_SHARED_LIBRARY)
 
 include $(call all-makefiles-under, $(LOCAL_PATH))
