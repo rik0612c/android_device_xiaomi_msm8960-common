@@ -79,6 +79,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@5.0-impl \
     android.hardware.broadcastradio@1.0-impl \
     android.hardware.soundtrigger@2.0-impl \
+    audio.primary.default \
     audio.primary.msm8960 \
     audio.r_submix.default \
     audio.usb.default \
